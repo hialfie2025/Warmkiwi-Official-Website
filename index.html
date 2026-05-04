@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WarmKiwi — Healthy Homes Auckland</title>
+  <title>WarmKiwi — Home Compliance Expert Auckland</title>
+  <meta name="description" content="Auckland's Healthy Homes Standards specialists. Full HHS assessment, heating, insulation, ventilation, drainage, smoke alarms and more." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,8 +15,7 @@
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="index.html" class="logo">
-        <span class="logo-leaf">🌿</span>
-        <span class="logo-text">WarmKiwi</span>
+        <img src="logo.png" alt="WarmKiwi" />
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -23,48 +23,110 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="index.html#contact" class="nav-cta">Get a Quote</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Auckland's Healthy Homes Specialists</p>
-      <h1 class="hero-title">Warm.<br>Dry.<br><em>Compliant.</em></h1>
-      <p class="hero-sub">One-stop Healthy Homes Standards solution for landlords and property managers across Auckland.</p>
-      <div class="hero-actions">
-        <a href="services.html" class="btn btn-primary">Our Services</a>
-        <a href="index.html#contact" class="btn btn-outline">Free Consultation</a>
+    <div class="hero-orb1"></div>
+    <div class="hero-orb2"></div>
+    <div class="hero-inner">
+      <!-- Left: text -->
+      <div class="hero-content">
+        <p class="hero-eyebrow">Auckland's Home Compliance Expert</p>
+        <h1 class="hero-title">Warm.<br>Dry.<br><em>Compliant.</em></h1>
+        <p class="hero-sub">One-stop Healthy Homes Standards solution for Auckland landlords and property managers — stress free, start to finish.</p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn btn-primary">Our Services</a>
+          <a href="#contact" class="btn btn-outline">Free Consultation</a>
+        </div>
+      </div>
+      <!-- Right: house animation -->
+      <div class="hero-house" aria-hidden="true">
+        <svg viewBox="0 0 400 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="hg1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+              <stop offset="100%" stop-color="#40916c"/>
+            </linearGradient>
+            <linearGradient id="hg2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#74c69d"/>
+              <stop offset="100%" stop-color="#40916c"/>
+            </linearGradient>
+            <linearGradient id="sunG" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#b7e4c7"/>
+              <stop offset="100%" stop-color="#74c69d"/>
+            </linearGradient>
+            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="2.5" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <!-- Sun top-right -->
+          <circle class="draw-line" cx="348" cy="54" r="26" stroke="url(#sunG)" stroke-width="2.5" fill="none" filter="url(#glow)" style="--len:165px; --delay:0s"/>
+          <line class="draw-line" x1="348" y1="18" x2="348" y2="10" stroke="url(#sunG)" stroke-width="2" stroke-linecap="round" style="--len:10px; --delay:0.25s"/>
+          <line class="draw-line" x1="348" y1="90" x2="348" y2="98" stroke="url(#sunG)" stroke-width="2" stroke-linecap="round" style="--len:10px; --delay:0.27s"/>
+          <line class="draw-line" x1="312" y1="54" x2="304" y2="54" stroke="url(#sunG)" stroke-width="2" stroke-linecap="round" style="--len:10px; --delay:0.29s"/>
+          <line class="draw-line" x1="384" y1="54" x2="392" y2="54" stroke="url(#sunG)" stroke-width="2" stroke-linecap="round" style="--len:10px; --delay:0.31s"/>
+          <line class="draw-line" x1="323" y1="29" x2="316" y2="22" stroke="url(#sunG)" stroke-width="2" stroke-linecap="round" style="--len:10px; --delay:0.33s"/>
+          <line class="draw-line" x1="373" y1="29" x2="380" y2="22" stroke="url(#sunG)" stroke-width="2" stroke-linecap="round" style="--len:10px; --delay:0.35s"/>
+          <line class="draw-line" x1="323" y1="79" x2="316" y2="86" stroke="url(#sunG)" stroke-width="2" stroke-linecap="round" style="--len:10px; --delay:0.37s"/>
+          <line class="draw-line" x1="373" y1="79" x2="380" y2="86" stroke="url(#sunG)" stroke-width="2" stroke-linecap="round" style="--len:10px; --delay:0.39s"/>
+
+          <!-- Chimney -->
+          <rect class="draw-line" x="248" y="96" width="26" height="46" rx="2" stroke="url(#hg1)" stroke-width="3" fill="none" style="--len:148px; --delay:0.5s"/>
+
+          <!-- Roof -->
+          <polyline class="draw-line" points="28,178 200,72 372,178" stroke="url(#hg1)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#glow)" style="--len:540px; --delay:0.65s"/>
+
+          <!-- Left outer wall -->
+          <line class="draw-line" x1="28" y1="178" x2="28" y2="308" stroke="url(#hg1)" stroke-width="3.5" stroke-linecap="round" style="--len:130px; --delay:1.08s"/>
+          <!-- Right outer wall -->
+          <line class="draw-line" x1="372" y1="178" x2="372" y2="308" stroke="url(#hg1)" stroke-width="3.5" stroke-linecap="round" style="--len:130px; --delay:1.14s"/>
+          <!-- Base -->
+          <line class="draw-line" x1="28" y1="308" x2="372" y2="308" stroke="url(#hg1)" stroke-width="3.5" stroke-linecap="round" style="--len:344px; --delay:1.28s"/>
+
+          <!-- Door with arch -->
+          <path class="draw-line" d="M168,308 L168,240 Q168,218 200,218 Q232,218 232,240 L232,308" stroke="url(#hg2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" style="--len:280px; --delay:1.44s"/>
+          <!-- door knob -->
+          <circle class="draw-line" cx="223" cy="268" r="4.5" stroke="url(#hg2)" stroke-width="2.5" fill="none" style="--len:29px; --delay:1.72s"/>
+
+          <!-- Left window -->
+          <rect class="draw-line" x="68" y="200" width="64" height="56" rx="5" stroke="url(#hg1)" stroke-width="3" fill="none" style="--len:244px; --delay:1.50s"/>
+          <line class="draw-line" x1="100" y1="200" x2="100" y2="256" stroke="url(#hg1)" stroke-width="2" stroke-linecap="round" style="--len:56px; --delay:1.64s"/>
+          <line class="draw-line" x1="68" y1="228" x2="132" y2="228" stroke="url(#hg1)" stroke-width="2" stroke-linecap="round" style="--len:64px; --delay:1.68s"/>
+
+          <!-- Right window -->
+          <rect class="draw-line" x="268" y="200" width="64" height="56" rx="5" stroke="url(#hg1)" stroke-width="3" fill="none" style="--len:244px; --delay:1.54s"/>
+          <line class="draw-line" x1="300" y1="200" x2="300" y2="256" stroke="url(#hg1)" stroke-width="2" stroke-linecap="round" style="--len:56px; --delay:1.66s"/>
+          <line class="draw-line" x1="268" y1="228" x2="332" y2="228" stroke="url(#hg1)" stroke-width="2" stroke-linecap="round" style="--len:64px; --delay:1.70s"/>
+
+          <!-- Chimney smoke -->
+          <path class="smoke" d="M258,94 Q264,80 256,68 Q248,56 256,42" stroke="rgba(116,198,157,0.6)" stroke-width="2" stroke-linecap="round" fill="none" style="--sd:1.9s"/>
+          <path class="smoke" d="M266,90 Q273,75 265,62 Q257,49 265,34" stroke="rgba(116,198,157,0.35)" stroke-width="1.5" stroke-linecap="round" fill="none" style="--sd:2.4s"/>
+        </svg>
       </div>
     </div>
     <div class="hero-badges">
-      <div class="badge">
-        <span class="badge-icon">✓</span>
-        <span>HPA Trained Inspectors</span>
-      </div>
-      <div class="badge">
-        <span class="badge-icon">✓</span>
-        <span>HomeFit Certified</span>
-      </div>
-      <div class="badge">
-        <span class="badge-icon">✓</span>
-        <span>Full HHS Compliance</span>
-      </div>
+      <div class="badge"><span class="badge-icon">✓</span><span>HPA Trained Inspectors</span></div>
+      <div class="badge"><span class="badge-icon">✓</span><span>HomeFit Certified (NZGBC)</span></div>
+      <div class="badge"><span class="badge-icon">✓</span><span>IAONZ Member</span></div>
+      <div class="badge"><span class="badge-icon">✓</span><span>Insured by AMI</span></div>
     </div>
-  </section>
+  </section>>
 
-  <!-- SERVICES OVERVIEW -->
+  <!-- SERVICES -->
   <section class="services-section" id="services">
     <div class="container">
       <div class="section-header">
         <p class="section-tag">What we do</p>
-        <h2>Complete Property Care</h2>
-        <p class="section-sub">From assessment to installation — we handle everything needed to meet Healthy Homes Standards.</p>
+        <h2>Complete <em>Property Care</em></h2>
+        <p class="section-sub">From assessment to installation — everything needed to meet Healthy Homes Standards under one roof.</p>
       </div>
       <div class="services-grid">
         <a href="services/healthy-homes.html" class="service-card">
@@ -94,13 +156,13 @@
         <a href="services/smoke-alarm.html" class="service-card">
           <div class="service-icon">🔔</div>
           <h3>Smoke Alarm</h3>
-          <p>Compliant smoke alarm installation and replacement. From $113.85 · 30 min</p>
+          <p>Compliant smoke alarm supply and installation. From $113.85 · 30 min</p>
           <span class="service-arrow">→</span>
         </a>
         <a href="services/draught-stopping.html" class="service-card">
           <div class="service-icon">🚪</div>
           <h3>Draught Stopping</h3>
-          <p>Seal gaps and eliminate cold draughts for a warmer, more comfortable home. From $149.50 · 1 hr</p>
+          <p>Seal gaps and eliminate cold draughts for a warmer, drier home. From $149.50 · 1 hr</p>
           <span class="service-arrow">→</span>
         </a>
       </div>
@@ -111,7 +173,10 @@
   <section class="about-section" id="about">
     <div class="container about-grid">
       <div class="about-visual">
-        <div class="about-card-stack">
+        <div class="about-img">
+          <div class="about-img-inner">🏠</div>
+        </div>
+        <div class="about-stats">
           <div class="about-stat">
             <span class="stat-num">6</span>
             <span class="stat-label">HHS Standards Covered</span>
@@ -122,7 +187,34 @@
           </div>
           <div class="about-stat">
             <span class="stat-num">100%</span>
-            <span class="stat-label">Compliance focus</span>
+            <span class="stat-label">Compliance focused</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num">1-Stop</span>
+            <span class="stat-label">Solution for landlords</span>
+          </div>
+        </div>
+        <div class="credentials">
+          <div class="credential-badge">
+            <div class="cred-icon">🏅</div>
+            <div class="credential-text">
+              <strong>IAONZ Member</strong>
+              Insulation Association of NZ
+            </div>
+          </div>
+          <div class="credential-badge">
+            <div class="cred-icon">🛡️</div>
+            <div class="credential-text">
+              <strong>Insured by AMI</strong>
+              Full liability coverage
+            </div>
+          </div>
+          <div class="credential-badge">
+            <div class="cred-icon">🌿</div>
+            <div class="credential-text">
+              <strong>HomeFit Certified</strong>
+              NZGBC Programme
+            </div>
           </div>
         </div>
       </div>
@@ -132,7 +224,7 @@
         <p>At WarmKiwi, we offer a stress-free Healthy Homes Standards solution — ensuring your rental property is fully compliant, warm, and healthy, so landlords and tenants can relax.</p>
         <p>Our inspectors are trained by HPA and the HomeFit programme by NZGBC, with extensive knowledge and experience in home performance.</p>
         <p>We provide a wide range of property maintenance services: insulation, ground moisture barriers, heat pumps, heaters, guttering, rangehoods, exhaust fans, and more.</p>
-        <a href="index.html#contact" class="btn btn-primary">Talk to us</a>
+        <a href="#contact" class="btn btn-primary">Talk to us</a>
       </div>
     </div>
   </section>
@@ -154,8 +246,8 @@
       <div class="clients-logos">
         <div class="client-placeholder">WAPM</div>
         <div class="client-placeholder">Kāhui Tū Kaha</div>
-        <div class="client-placeholder">Property Manager</div>
-        <div class="client-placeholder">Auckland Landlord</div>
+        <div class="client-placeholder">Auckland Landlords</div>
+        <div class="client-placeholder">Property Managers</div>
       </div>
     </div>
   </section>
@@ -166,7 +258,7 @@
       <div class="contact-info">
         <p class="section-tag">Get in touch</p>
         <h2>Let's make your home <em>compliant</em></h2>
-        <p>We work around Auckland. Contact us for a free, no-obligation consultation.</p>
+        <p>We work across Auckland. Contact us for a free, no-obligation consultation.</p>
         <div class="contact-details">
           <div class="contact-item">
             <span class="contact-icon">✉</span>
@@ -185,28 +277,42 @@
       <form class="contact-form" id="contactForm">
         <div class="form-row">
           <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" placeholder="Jane" required />
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Jane" required />
           </div>
           <div class="form-group">
             <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" placeholder="Smith" />
+            <input type="text" id="lastName" name="lastName" placeholder="Smith" />
           </div>
         </div>
         <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="jane@example.com" required />
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required />
         </div>
         <div class="form-group">
           <label for="phone">Phone</label>
-          <input type="tel" id="phone" placeholder="021 000 0000" />
+          <input type="tel" id="phone" name="phone" placeholder="021 000 0000" />
+        </div>
+        <div class="form-group">
+          <label for="service">Service Interested In</label>
+          <select id="service" name="service">
+            <option value="">— Select a service —</option>
+            <option>Healthy Homes Assessment</option>
+            <option>Heating</option>
+            <option>Insulation & Ground Moisture Barrier</option>
+            <option>Ventilation & Drainage</option>
+            <option>Smoke Alarm</option>
+            <option>Draught Stopping</option>
+            <option>Multiple / Not Sure</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" rows="4" placeholder="Tell us about your property..."></textarea>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your property…"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary full-width">Send Message</button>
-        <p class="form-success" id="formSuccess">Thanks! We'll be in touch soon.</p>
+        <button type="submit" id="submitBtn" class="btn btn-primary full-width">Send Message</button>
+        <p class="form-success" id="formSuccess">✓ Message sent! We'll be in touch within one business day.</p>
+        <p class="form-error" id="formError">Something went wrong. Please email us directly at hello@warm.kiwi</p>
       </form>
     </div>
   </section>
@@ -215,14 +321,16 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo-leaf">🌿</span>
-        <span class="logo-text">WarmKiwi</span>
-        <p>Healthy Homes Auckland</p>
+        <img src="logo.png" alt="WarmKiwi" />
+        <div class="footer-brand-text">
+          <span>WarmKiwi</span>
+          <p>Home Compliance Expert</p>
+        </div>
       </div>
       <div class="footer-links">
         <a href="services.html">Services</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </div>
       <p class="footer-copy">© 2024 WarmKiwi. All rights reserved.</p>
     </div>
